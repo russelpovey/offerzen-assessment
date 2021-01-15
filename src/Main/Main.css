@@ -1,0 +1,15 @@
+.body {
+  height: 100%;
+}
+.bg-gray {
+  background-color: var(--catskill-white);
+}
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: var(--pad-default);
+  padding-bottom: var(--pad-default);
+  color: var(--jumbo);
+  font-weight: 600;
+}

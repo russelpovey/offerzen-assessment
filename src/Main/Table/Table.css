@@ -1,0 +1,66 @@
+table thead {
+  background-color: var(--athens-gray);
+  font-weight: bold;
+}
+table thead th {
+  color: var(--oxford-blue);
+}
+table td,
+table th {
+  padding: var(--pad-default);
+  vertical-align: middle;
+  text-align: left;
+  font-size: var(--font-size-large);
+}
+table tr td {
+  font-weight: 300;
+  font-size: var(--font-size-large);
+}
+table tr.active td {
+  font-weight: 600;
+}
+
+table tr {
+  border-bottom: 1px solid rgb(228, 235, 239);
+  color: var(--jumbo);
+  transition: 0.2s ease-in-out all;
+}
+
+table tbody tr:hover {
+  border-bottom: 1px solid rgb(228, 235, 239);
+  cursor: pointer;
+  background-color: var(--catskill-white);
+}
+
+.avatar-img {
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  margin-right: var(--pad-default);
+}
+
+.notification-cell {
+  display: flex;
+  align-items: center;
+}
+.notification-cell > * {
+  margin-right: var(--pad-small);
+}
+.notification-cell span.notify {
+  width: var(--font-size-default);
+  height: var(--font-size-default);
+  border-radius: 100%;
+  display: block;
+}
+.notification-cell span.notify.active {
+  background-color: var(--jungle-green);
+}
+.notification-cell span.time {
+  font-weight: 100;
+  font-size: var(--font-size-medium);
+}
+
+table .action {
+  color: var(--scooter);
+  font-weight: 600;
+}

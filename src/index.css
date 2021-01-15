@@ -1,13 +1,233 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+:root {
+  /* COLORS */
+  --oxford-blue: #343951;
+  --scooter: #40aadb;
+  --jungle-green: #34b96f;
+  --mandy: #e25c59;
+  --white-ice: #d9eef8;
+  --jumbo: #7c7c80;
+  --gray-chateau: #a6acaf;
+  --mystic: #e4ebef;
+  --catskill-white: #eef3f6;
+  --athens-gray: #f9fafb;
+  --white: #ffffff;
+  /* PADDING */
+  --pad-default: 12px;
+  --pad-small: 6px;
+  /* SHADOW */
+  --shadow: rgba(0, 0, 0, 0.1) 1px 1px 5px;
+  --round: 3px;
+  /* TYPOGRAPHY */
+  --font-size-default: 10px;
+  --font-size-medium: 12px;
+  --font-size-large: 14px;
+  --font-weight-default: 300;
+  --font-weight-semi: 600;
+  --font-weight-bold: 900;
+}
+
+.raised {
+  box-shadow: var(--shadow);
+}
+.round {
+  border-radius: var(--round);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+body,
+#root,
+.app,
+.body {
+  height: 100%;
+  /* height: 100%;
+  overflow: hidden; */
+}
+
+.h-100 {
+  height: 100%;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.app {
+  height: 100%;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pad-default {
+  padding: var(--pad-default);
+}
+
+.pad-h {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pointer {
+  cursor: pointer;
 }
