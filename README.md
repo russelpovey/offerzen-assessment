@@ -1,3 +1,13 @@
+# Overview
+
+Please find the assessment for Offerzen. It's based of a CRA repo.
+
+Steps to run:
+
+1. Clone Repo
+2. npm i
+3. npm run start
+
 ## Task D
 
 I used the full 4 hours to complete this, I used the majority of the time setting up the ui (2-3hours) and the rest on the functionality.
