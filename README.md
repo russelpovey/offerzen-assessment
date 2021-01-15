@@ -1,6 +1,6 @@
 # Overview
 
-Please find the assessment for Offerzen. It's based of a CRA repo.
+Please find the assessment for Offerzen. It's based off of a CRA repo.
 
 Steps to run:
 
